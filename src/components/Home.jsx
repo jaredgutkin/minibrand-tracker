@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaBug, FaFish, FaQuestionCircle } from "react-icons/fa";
+import { FaBolt, FaQuestionCircle } from "react-icons/fa";
 import Mbs4List from "./mbs4/mbs4ListComponent";
 
 
@@ -8,22 +8,22 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
-              <Link to="/bug">
+              <Link to="/mbs1">
                 <div className="jumbotron jumbotron-fluid bg-success text-white">
                   <div className="container">
                     <h1 className="display-4 text-center">
-                      <FaBug /> Mini Brands! Series 1
+                      <FaBolt /> Mini Brands! Series 1
                     </h1>
                   </div>
                 </div>
               </Link>
             </div>
             <div className="col-sm-6">
-              <Link to="/fish">
+              <Link to="/mbs2">
                 <div className="jumbotron jumbotron-fluid bg-primary text-white">
                   <div className="container">
                     <h1 className="display-4 text-center">
-                      <FaFish /> Mini Brands! Series 2
+                      <FaBolt /> Mini Brands! Series 2
                     </h1>
                   </div>
                 </div>
@@ -33,11 +33,11 @@ export default function Home() {
 
           <div className="row">
             <div className="col-sm-6">
-              <Link to="/bug">
+              <Link to="/mbs3">
                 <div className="jumbotron jumbotron-fluid bg-success text-white">
                   <div className="container">
                     <h1 className="display-4 text-center">
-                      <FaBug /> Mini Brands! Series 3
+                      <FaBolt /> Mini Brands! Series 3
                     </h1>
                   </div>
                 </div>
@@ -48,7 +48,7 @@ export default function Home() {
                 <div className="jumbotron jumbotron-fluid bg-primary text-white">
                   <div className="container">
                     <h1 className="display-4 text-center">
-                      <FaFish /> Mini Brands! Series 4
+                      <FaBolt /> Mini Brands! Series 4
                     </h1>
                   </div>
                 </div>
