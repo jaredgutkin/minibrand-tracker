@@ -12,9 +12,9 @@ export default function NavbarMenu() {
         <Navbar.Toggle aria-controls="navbar-menu" />
         <Navbar.Collapse id="navbar-menu">
           <Nav className="mr-auto">
-            <Nav.Link as={Link} to="/">
+            {/* <Nav.Link as={Link} to="/">
               <FaHome/> Home
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link as={Link} to="/mbs1">
               <FaBolt /> MB! Series 1
             </Nav.Link>

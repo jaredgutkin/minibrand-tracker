@@ -7,15 +7,18 @@ function buildRows(mbs4) {
       <tr key={`${index+currMbs4.number+currMbs4.itemName}`}>
         <td>{currMbs4.itemNo}</td>
         <td className="text-center">
-          {/* <img
+
+          <br />
+          {currMbs4.itemName}
+        </td>
+        <td className='text-center'>
+        <img
             width={50}
             height={50}
             className="mr-3"
             src={currMbs4.image}
             alt={`${currMbs4.itemName}+`}
-          /> */}
-          <br />
-          {currMbs4.itemName}
+          />
         </td>
         <td>
             {currMbs4.brandName}
@@ -57,6 +60,7 @@ export default function Mbs4Table() {
           <tr>
             <th width={1}>#</th>
             <th width={220}>Name</th>
+            <th width={100}>Image</th>
             <th width={160}>Brand Name</th>
             <th width={1}>Rarity</th>
             <th width={100}>Special Features</th>
