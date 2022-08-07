@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 import { Navbar, Nav } from "react-bootstrap";
-import { FaBlogger, FaBolt, FaQuestionCircle, FaFish, FaHome} from 'react-icons/fa'
+import { FaBlogger, FaBolt, FaQuestionCircle} from 'react-icons/fa'
 
 export default function NavbarMenu() {
     return (
-      <Navbar bg="success" variant="dark" expand="sm" sticky="top">
+      <Navbar bg="success" variant="light" expand="sm" sticky="top">
         <Navbar.Brand as={Link} to="/">
           <FaBlogger /> Mini Brand Tracker
         </Navbar.Brand>
