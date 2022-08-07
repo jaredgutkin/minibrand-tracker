@@ -7,31 +7,35 @@ function buildRows(mbs4) {
       <tr key={`${index+currMbs4.number+currMbs4.itemName}`}>
         <td>{currMbs4.itemNo}</td>
         <td className="text-center">
-          <img
+          {/* <img
             width={50}
             height={50}
             className="mr-3"
             src={currMbs4.image}
             alt={`${currMbs4.itemName}+`}
-          />
+          /> */}
           <br />
-          {currMbs4.brandName}
+          {currMbs4.itemName}
         </td>
-        <td></td>
-        <td></td>
+        <td>
+            {currMbs4.brandName}
+        </td>
+        <td>
+        {currMbs4.rarity}
+        </td>
         {/* <td>{currMbs4.location}</td>
         <td>{currMbs4.weather}</td> */}
         <td>
-          <img
+          {/* <img
             width={25}
             height={25}
             className="mr-3"
             src={'/image/bell_bag.png'}
             alt="bell_bag"
-          />
-          {currMbs4.rarity}
+          /> */}
+{currMbs4.specialFeature}
         </td>
-        <td>{currMbs4.specialFeatures}</td>
+
       </tr>
     );
   });
@@ -53,12 +57,9 @@ export default function Mbs4Table() {
           <tr>
             <th width={1}>#</th>
             <th width={220}>Name</th>
-            <th width={160}>Status</th>
-            <th>Months</th>
-            <th width={1}>Location</th>
-            <th width={1}>Weather</th>
-            <th width={100}>Price</th>
-            <th>Time</th>
+            <th width={160}>Brand Name</th>
+            <th width={1}>Rarity</th>
+            <th width={100}>Special Features</th>
           </tr>
         </thead>
         <tbody>
