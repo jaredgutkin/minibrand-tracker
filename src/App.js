@@ -7,6 +7,7 @@ import Mbs1List from './components/mbs1/mbs1ListComponent';
 import Mbs2List from './components/mbs2/mbs2ListComponent';
 import Mbs3List from './components/mbs3/mbs3ListComponent';
 import Mbs4List from './components/mbs4/mbs4ListComponent';
+import About from './components/About';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
         <Route exact path='/mbs2' element={<Mbs2List />}></Route>
         <Route exact path='/mbs3' element={<Mbs3List />}></Route>
         <Route exact path='/mbs4' element={<Mbs4List />}></Route>
-
+        <Route exact path='/about' element={<About />}></Route>
 
 
       </Routes>

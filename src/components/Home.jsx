@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { FaBolt, FaQuestionCircle } from "react-icons/fa";
-import Mbs4List from "./mbs4/mbs4ListComponent";
 
 
 export default function Home() {
