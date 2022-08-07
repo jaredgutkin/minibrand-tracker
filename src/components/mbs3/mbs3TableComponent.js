@@ -7,13 +7,13 @@ function buildRows(mbs3) {
       <tr key={`${index+currMbs3.number+currMbs3.itemName}`}>
         <td>{currMbs3.itemNo}</td>
         <td className="text-center">
-          {/* <img
+          <img
             width={50}
             height={50}
             className="mr-3"
             src={currMbs3.image}
             alt={`${currMbs3.itemName}+`}
-          /> */}
+          />
           <br />
           {currMbs3.itemName}
         </td>
