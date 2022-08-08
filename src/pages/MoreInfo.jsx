@@ -15,10 +15,17 @@ export default function MoreInfo() {
   
     return (
       <div className="detail-wrapper">
-      <div>
-        <h2>{mbs4[0].itemName}</h2>
-        <img src={mbs4[0].image} alt={mbs4[0].itemName} />
-      </div>
+        <div>
+          <h2>{mbs4[0].itemName}</h2>
+          <img src={mbs4[0].image} alt={mbs4[0].itemName} />
+        </div>
+        <div className="info">
+          <h3>Item Number: {mbs4[0].itemNo}</h3>
+          <h3>Brand Name: {mbs4[0].brandName}</h3>
+          <h3>Item Name: {mbs4[0].itemName}</h3>
+          <h3>Rarity: {mbs4[0].rarity}</h3>
+          <h3>Special Feature: {mbs4[0].specialFeature}</h3>
+        </div>
       </div>
       )
   }
