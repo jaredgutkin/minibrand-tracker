@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Table } from 'react-bootstrap';
 
 function buildRows(mbs3) {
   return mbs3.map((currMbs3, index) => {
     return (
       <tr key={`${index+currMbs3.number+currMbs3.itemName}`}>
+        <Link to={`/${currMbs3.seriesNo}/${currMbs3.itemNo}`}>
         <td>{currMbs3.itemNo}</td>
+        </Link>
         <td className="text-center">
           <img
             width={50}

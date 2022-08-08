@@ -5,12 +5,6 @@ export default function MoreInfo() {
   const { seriesNo, itemNo } = useParams()
   const [mbs4, setMbs4] = useState([{}])
   
-    // const fetchDetails = async () => {
-    //     const data = await fetch(`https://surprise-5-api.vercel.app/api/minibrand/4/itemno/${itemNo}`)
-    //     const detailData = await data.json()
-    //     setDetails(detailData)
-    //   }
-
       useEffect(()=>{
         fetch(`https://surprise-5-api.vercel.app/api/minibrand/${seriesNo}/itemno/${itemNo}`)
         .then(response => response.json())
