@@ -1,31 +1,31 @@
 import { useEffect, useState } from 'react';
 import {useParams} from 'react-router-dom'
 
-
-
 export default function MoreInfo() {
-  let params = useParams()
-  const [mbs4, setMbs4] = useState([])
+  const { seriesNo, itemNo } = useParams()
+  const [mbs4, setMbs4] = useState([{}])
   
     // const fetchDetails = async () => {
-    //     const data = await fetch(`https://surprise-5-api.vercel.app/api/minibrand/4/itemno/${params.itemNo}`)
+    //     const data = await fetch(`https://surprise-5-api.vercel.app/api/minibrand/4/itemno/${itemNo}`)
     //     const detailData = await data.json()
     //     setDetails(detailData)
     //   }
 
       useEffect(()=>{
-        fetch(`https://surprise-5-api.vercel.app/api/minibrand/4/itemno/${params.itemNo}`)
+        fetch(`https://surprise-5-api.vercel.app/api/minibrand/${seriesNo}/itemno/${itemNo}`)
         .then(response => response.json())
         .then(data => setMbs4(data))
-    }, [params.itemNo])
+    }, [seriesNo, itemNo])
+
+    console.log(mbs4)
   
     return (
-        <div>
-          <div>
-            <h2>{mbs4.itemName}</h2>
-          </div>
-        
-        </div>
+      <div className="detail-wrapper">
+      <div>
+        <h2>{mbs4[0].itemName}</h2>
+        <img src={mbs4[0].image} alt={mbs4[0].itemName} />
+      </div>
+      </div>
       )
   }
 
