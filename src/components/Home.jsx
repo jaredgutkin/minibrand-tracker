@@ -55,6 +55,21 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="row">
+            <div className="col-sm-12">
+              <Link to="/mbsgr">
+                <div className="jumbotron jumbotron-fluid bg-secondary
+                  text-white">
+                  <div className="container">
+                    <h1 className="display-4 text-center">
+                      <FaBolt /> Mini Brands! Gold Rush
+                    </h1>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+
           
           <div className="row">
             <div className="col-sm-12">
