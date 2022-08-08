@@ -25,7 +25,7 @@ function App() {
         <Route exact path='/mbs4' element={<Mbs4List />}></Route>
         <Route exact path='/mbsgr' element={<MbsgrList />}></Route>
         <Route exact path='/about' element={<About />}></Route>
-        <Route exact path='/mbs4/:itemNo' element={<MoreInfo />}></Route>
+        <Route exact path='/4/:itemNo' element={<MoreInfo />}></Route>
 
 
       </Routes>
