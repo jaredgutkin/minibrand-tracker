@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 import { FaBolt, FaQuestionCircle } from "react-icons/fa";
 
 
-export default function Home() {
+export default function MiniBrandsHome() {
     return (
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
               <Link to="/mbs1">
-                <div className="jumbotron jumbotron-fluid bg-success text-white">
-                  <div className="container">
-                    <h1 className="display-4 text-center">
+                <div className="jumbotron jumbotron-fluid bg-dark text-white">
+                  <div className="container text-decoration-none">
+                    <h1 className="display-4 text-center text-decoration-none">
                       <FaBolt /> Mini Brands! Series 1
                     </h1>
                   </div>
@@ -19,7 +19,7 @@ export default function Home() {
             </div>
             <div className="col-sm-6">
               <Link to="/mbs2">
-                <div className="jumbotron jumbotron-fluid bg-primary text-white">
+                <div className="jumbotron jumbotron-fluid bg-dark text-white">
                   <div className="container">
                     <h1 className="display-4 text-center">
                       <FaBolt /> Mini Brands! Series 2
@@ -33,7 +33,7 @@ export default function Home() {
           <div className="row">
             <div className="col-sm-6">
               <Link to="/mbs3">
-                <div className="jumbotron jumbotron-fluid bg-success text-white">
+                <div className="jumbotron jumbotron-fluid bg-dark text-white">
                   <div className="container">
                     <h1 className="display-4 text-center">
                       <FaBolt /> Mini Brands! Series 3
@@ -44,7 +44,7 @@ export default function Home() {
             </div>
             <div className="col-sm-6">
               <Link to="/mbs4">
-                <div className="jumbotron jumbotron-fluid bg-primary text-white">
+                <div className="jumbotron jumbotron-fluid bg-dark text-white">
                   <div className="container">
                     <h1 className="display-4 text-center">
                       <FaBolt /> Mini Brands! Series 4
@@ -58,8 +58,8 @@ export default function Home() {
           <div className="row">
             <div className="col-sm-12">
               <Link to="/mbsgr">
-                <div className="jumbotron jumbotron-fluid bg-secondary
-                  text-white">
+                <div className="jumbotron jumbotron-fluid bg-dark
+                  text-yellow text-decoration-none">
                   <div className="container">
                     <h1 className="display-4 text-center">
                       <FaBolt /> Mini Brands! Gold Rush
